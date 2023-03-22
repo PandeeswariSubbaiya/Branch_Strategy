@@ -10,6 +10,7 @@ pipeline {
           git checkout ${mainBranch}
           git merge ${releaseBranch}
           git push origin ${mainBranch}
+          
         }
       }
     }
