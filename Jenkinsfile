@@ -20,7 +20,7 @@ stage('Build') {
                 def mavenCmd = "${mvnHome}/bin/mvn"
 
                     // Build the project
-                    sh "${mavenCmd} clean install"
+                    sh "${mavenCmd} clean package"
               }
             }
         }
