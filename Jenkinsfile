@@ -6,8 +6,7 @@ pipeline {
         script {
           def releaseBranch = 'release'
           def mainBranch = 'main'
-          git branch: releaseBranch, url: 'https://github.com/PandeeswariSubbaiya/Branch_Strategy.git'
-          
+          git branch: releaseBranch, url: 'https://github.com/PandeeswariSubbaiya/Branch_Strategy.git' 
         }
       }
     }
