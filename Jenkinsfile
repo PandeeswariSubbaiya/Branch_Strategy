@@ -11,5 +11,11 @@ pipeline {
         }
       }
     }
-  }
+stage('Build') {
+            steps {
+                // build the project using maven
+                sh 'mvn clean package'
+            }
+        }
+    }
 }
