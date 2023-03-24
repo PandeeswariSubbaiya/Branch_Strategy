@@ -37,6 +37,7 @@ stages {
                 withCredentials([usernamePassword(credentialsId: 'PandeeswariSubbaiya', usernameVariable: 'PandeeswariSubbaiya', passwordVariable: 'Subbaiya@08')]) {
                     sh "git config user.name 'Pandeeswari'"
                     sh "git config user.email 'Pandeeswari318@gmail.com'"
+                    //Push it to main branch
                     sh "git push origin main"
                 }
             }
